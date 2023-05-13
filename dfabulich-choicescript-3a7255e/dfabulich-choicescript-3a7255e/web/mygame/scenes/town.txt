@@ -1,0 +1,89 @@
+*if outfit = "medic_uniform"
+    Your trench-coat billowing in the breeze as you walk gives you an air of importance, but the moment the common-folk see
+    your horns, they huddle into groups of hushed whispers. There is no doubt in your mind that they are ridiculing you,
+    for your asymmetrical head and for your attire. Some of them sneer and laugh in your face, but you are unphased.
+
+    ...Rather, you [i]would[/i] be unphased, had Raserei not grabbed the offending civillians by the collar and snarled in
+    their faces for them to either shove their venomous words back into their "shit-spewing faces" or end up drier than
+    a "hag burnt on a stake".
+
+    With as much heat as Ras was producing, the clothing of the people he grabbed singed under his fingertips. His flaming
+    hair burnt white with rage as he spat at the offenders and indignantly huffed as he returned to your side.
+
+    You bring a tired hand to your head. So much for being discreet.
+
+    It was not like Raserei could be discreet in the first place. He is a fire elemental - tempermental, judgmental. Hells,
+    with the way he acts and dresses, he could be mistaken for the Fire Elemental King's Heir. It wouldn't be too surprising
+    if that proved to be true, but it would definitely worsten the headache you've got so far.
+
+    *goto Mi'Veltgar_streets
+
+*elseif outfit = "vampire_hunter"
+    Your cloak perfectly conceals your face and your armour from the townsfolk, but that does little to quell their fearful
+    whispers. A pale traveller covered in a black cloak during broad daylight gave the people all they needed to know.
+    
+    [i]It isn't safe here.[/i]
+
+    You rush gracefully through the streets, dodging anyone in your way. [i]They[/i] noticed you running.
+    The Van Hellsing vampire hunters give chase, springing from alleys and springing from whichever direction.
+    Their blood pumps so thickly, so [i]sweetly[/i] through their veins. Your undead heart pounds as you hyperfocus
+    on their heartbeats. You shake off your stupor and run like the wind, heading for the shipyard and docks at the water's edge.
+    
+    Your desperation alerted the bat swarm to come to your aid, the dark cloud of angry - [i]annoyed[/i]
+    and [i]interrupted[/i] - chirping mammals clawing and scratching the offending hunters, buying you valuable escape time.
+
+    If only you had more time...
+
+    Alas, now is not the time for contemplation or lament over what could have been. Your legs carry you with newfound urgency,
+    such that you clamber up the side of a building and leap across rooftops to reach your destination.
+
+    *page_break To the docks!
+
+    You jump off the final rooftop and your knees buckle when you land, but that is no cause for concern. You right yourself and
+    rush to the the pirate ship's captain. He was your only hope right now, and you [i]know[/i] he won't refuse you since you have
+    more than enough coin to bargain with. Besides, the pirates still owe you favours from your previous jobs with them.
+
+    You call to him, "Captain!"
+
+    He raises an arm, beckoning you closer. You hasten your approach as you consider your destination from the mainland.
+    A brillant thought comes to you - a memory of a conversation with one of the travelling hunters. Something about a golden-eyed,
+    silver-haired monster hunter in the southwest that fought with magic, twin longswords, and potions. That monster-hunter
+    piqued your curiosity - he seemed to be just like you from what you've heard; no longer human but still on their side.
+
+    Your eyes widened. This was the perfect opportunity to meet with a man much like yourself.
+
+    You had pressed the hunter to give you the names of major port cities in the territory of the silver-haired
+    sword-slinger, threatening him with your fangs millimetres from his neck. The man eagerly cooperated with
+    you.
+
+    "Cintra, take me to Cintra!"
+
+    He senses the urgency in your voice and commands the crew to raise anchor and chart course for the shores of Cintra. Both you and he
+    jump aboard and hurry along the chaos. By the time the vampire hunters shook off your pet bat swarm, you were too far
+    to reach from shore.
+
+    Van Hellsing raged at your escape while your swarm carried to you a massive bag of store bought fruit and coin they stole
+    from the hunters. You smirk at your pets, grinning at all the ways you can extort the pirates for the treatment of their
+    scurvy, adding yet another debt they owe you.
+
+    *goto pirate_ship
+
+*else
+    *if Race = "Damned"
+        You are not exactly hidden from the masses, but it is clear by your posture and by the way you walk that others are not
+        to bother you. The scantily clad flame elemental trailing you is another story. He is openly gawked at and gossiped about.
+        A travelling stranger with his summon - the Fire Element embodied was one of the kinder things you heard from them.
+        The rest were looking to steal Raserei from you or called him your bitch.
+
+        You suppress a venomous glare in the direction of the gossip.
+    *elseif Race = "Vampire"
+        You look standard enough not to rouse too much suspicion, but the people are wary and the hunters are vigilant. You can't
+        hide well enough from them. Since you've decided not to wear your armour, you are vulnerable to any attacks. On the bright
+        side, you have the advantage of speed and stealth like this. If any situation were to arise, you could always summon the
+        armour onto yourself. However, the fact remains that right now, you are vulnerable to surprise attacks.
+
+*label pirate_ship
+
+
+*label Mi'Veltgar_streets
+

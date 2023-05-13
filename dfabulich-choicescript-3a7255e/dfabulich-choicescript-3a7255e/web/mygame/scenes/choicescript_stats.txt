@@ -1,0 +1,228 @@
+*label Nav_Choice
+*choice
+  #Review Stats
+    *goto Main_Stats
+  #Review Powers
+    *goto powers
+  #Review Currency
+    *goto Currency_Calc
+  #Review Relationships
+    *goto Relationships
+
+
+*label Main_Stats
+
+[b]Ethereal forces have converged, blossoming inside you as your strengths.[/b]
+
+*stat_chart
+  percent Strength 
+  percent Agility 
+  percent Dexterity 
+  percent Wisdom 
+  percent Intelligence 
+  percent Charisma 
+  percent Constitution 
+
+Your being thrums with a mysterious energy, somewhere between feral, [i][b]ravenous[/b][/i], and benevolent.
+
+[b]Alignment[/b]
+
+*stat_chart 
+  opposed_pair Chaotic
+    Lawful
+
+*if Chaotic > Lawful
+  The way you've used your powers as of late has been rather bold, rash and untamed.
+  
+  [b]People have noticed your violently unpredictable habits.[/b]
+  *page_break
+  *gosub Nav_Choice
+*elseif Chaotic < Lawful
+  You've made certain to use your powers in controlled ways, disciplined and direct.
+  
+  [b]People have noticed your naively honest habits.[/b]
+  *page_break
+  *gosub Nav_Choice
+*elseif Chaotic = Lawful
+  Not particularly favouring the direct approach, nor the unpredictable approach,
+  you remain unbiased towards any approach and all the harder to read for it.
+  
+  [b]Some extreme versions of spells might not be available to you.[/b]
+  *page_break
+  *gosub Nav_Choice
+  
+*label powers
+*if Race = "Vampire"
+  You have three spells you can call upon at any given time,
+  each with a specific purpose. You doubt you will learn new spells,
+  though runes, signs and sigils are not off the table.
+  *stat_chart 
+    percent p_mastery Mastery of Petrification [De-Buff]
+    percent c_mastery Mastery of Conjure [Damage Over Time]
+    percent b_mastery Mastery of Back-Stab Apparition [Consecutive Surprise Strike Chain]
+  *page_break
+  *gosub Nav_Choice
+
+*elseif Race = "Damned"
+  You have a few spells at your disposal, though to your disposition against
+  violence, you [b]CANNOT[/b] attack, debuff, or otherwise act with malice towards intelligent races.
+  *stat_chart
+    percent f_mastery Mastery of Flame [Utility]
+
+  *page_break
+  *gosub Nav_Choice
+
+*elseif Race = ""
+  You have yet to choose your path. Once you have chosen, things will become clear to you.
+  *page_break
+  *gosub Nav_Choice
+
+*label Currency_Calc
+*if Silver >= 10
+  Silver -10
+  Gold +1
+  *goto Currency_Calc
+*elseif  Copper >= 100
+  Copper -100
+  Silver +1
+  *goto Currency_Calc
+*elseif (Silver < 10) and (Copper < 100)
+  *goto Currency
+
+*label Currency
+[b]Your Currency[/b]
+
+*if Race = ""
+  You don't need money right now.
+  *page_break
+  *gosub Nav_Choice
+*else
+  Right now you have the equivalent of ${Gold} gold coins, ${Silver} silver studs, and ${Copper} copper pence in your coin pouch.
+  *page_break
+  *gosub Nav_Choice
+
+*label Relationships
+*if R_met = true
+  *rand R_f_msg 1 6
+    *if R_f_msg = 1
+      Hey! What's that dopey look for?!
+    *if R_f_msg = 2
+      I won't let you get hurt!
+    *if R_f_msg = 3
+      Come on, I'm not [i]that[/i] feral!
+    *if R_f_msg = 4
+      I make no promises! ...But, I'll [i]try[/i] to behave...
+    *if R_f_msg = 5
+      You'll tell me if they try shit, won't you?
+    *if R_f_msg = 6
+      What are we doing today?
+  *stat_chart
+    percent R_friendship
+  *if R_flirt >= 1
+    *rand R_r_msg 1 6
+      *if R_r_msg = 1
+        Wh-What?! Can't you see you're making me feel things?!
+      *if R_r_msg = 2
+        You're so soft...
+      *if R_r_msg = 3
+        You know damn well what you do to me...!
+      *if R_r_msg = 4
+        I'll be a good boy, I swear!
+      *if R_r_msg = 5
+        Mmh...
+      *if R_r_msg = 6
+        Why can't I get my mind off you...?
+    *stat_chart
+      percent R_romance
+  *goto menu
+
+*if G_met = true
+  *rand G_f_msg 1 6
+    *if G_f_msg = 1
+      Don't look at me.
+    *if G_f_msg = 2
+      Don't even think about it.
+    *if G_f_msg = 3
+      [i]No.[/i]
+    *if G_f_msg = 4
+      Why do I put up with this...
+    *if G_f_msg = 5
+      What.
+    *if G_f_msg = 6
+      Go bother the bard.
+  *stat_chart
+    percent G_friendship
+  *if G_flirt >= 1
+    *rand G_r_msg 1 6
+      *if G_r_msg = 1
+        Mmh...
+      *if G_r_msg = 2
+        Hmm...
+      *if G_r_msg = 3
+        Don't get hurt.
+      *if G_r_msg = 4
+        I'm... not the best at this...
+      *if G_r_msg = 5
+        I don't... [i]not[/i] like you.
+      *if G_r_msg = 6
+        Maybe...
+    *stat_chart
+      percent G_romance
+  *goto menu
+
+*if J_met = true
+  *rand J_f_msg 1 6
+    *if J_f_msg = 1
+      Can't keep your eyes off, I see~?
+    *if J_f_msg = 2
+      Oh, ${Name}, you inspire me so...
+    *if J_f_msg = 3
+      At least someone appreciates me!
+    *if J_f_msg = 4
+      You're not hurt, are you?
+    *if J_f_msg = 5
+      I think it's a miracle you survived all those cycles.
+    *if J_f_msg = 6
+      What can I do for you, my fine friend?
+  *stat_chart
+    percent J_friendship
+  *if J_flirt >= 1
+    *rand J_r_msg 1 6
+      *if J_r_msg = 1
+        Oh, you are adorable!
+      *if J_r_msg = 2
+        I see you looking, $[Name]~!
+      *if J_r_msg = 3
+        I think I'm rather fond of you~!
+      *if J_r_msg = 4
+        Stay with me, won't you?
+      *if J_r_msg = 5
+        There are so many things I would do to you... If you'll let me, that is.
+      *if J_r_msg = 6
+        I can't get my mind off you...
+    *stat_chart
+      percent J_romance
+  *goto menu
+
+*if S_met = true
+  *rand S_f_msg 1 3
+    *if S_f_msg = 1
+      ...
+    *if S_f_msg = 2
+      Mmh...
+    *if S_f_msg = 3
+      Hmm...
+  *stat_chart
+    percent S_friendship
+  *if S_flirt >= 1
+    *stat_chart
+      percent S_romance
+  *goto menu
+
+*else
+  You have yet to meet anyone you fancy to be a companion.
+  *page_break
+  *gosub Nav_Choice
+
+*label menu
+*gosub Nav_Choice

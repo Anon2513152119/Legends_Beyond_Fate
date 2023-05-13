@@ -1,0 +1,597 @@
+*title Legends Beyond Fate
+*author Fallen Saint
+*scene_list
+  startup
+  town
+  the_vampire_and_the_witcher
+  the_demon_and_the_slayer
+  variables
+  deaths
+
+*create Race ""
+*create Name ""
+
+*create Strength 0
+*create Agility 0
+*create Dexterity 0
+*create Wisdom 0
+*create Intelligence 0
+*create Charisma 0
+*create Constitution 0
+
+*create Body ""
+*create eye_colour ""
+*create horn_type ""
+*create outfit ""
+
+*create Chaotic 50
+*create Lawful 50
+
+*create Copper 0
+*create Silver 0
+*create Gold 0
+
+*create R_met false
+*create R_flirt 0
+*create R_friendship 0
+*create R_romance 0
+
+*create R_f_msg 0
+*create R_r_msg 0
+
+*create G_met false
+*create G_flirt 0
+*create G_friendship 0
+*create G_romance 0
+
+*create G_f_msg 0
+*create G_r_msg 0
+
+*create J_met false
+*create J_flirt 0
+*create J_friendship 0
+*create J_romance 0
+
+*create J_f_msg 0
+*create J_r_msg 0
+
+*create S_met false 
+*create S_flirt 0
+*create S_friendship 0
+*create S_romance 0
+
+*create S_f_msg 0
+*create S_r_msg 0
+
+*create p_mastery 0
+*create c_mastery 0
+*create b_mastery 0
+
+*create f_mastery 0
+
+*comment sm_init Legends Beyond Fate | 5
+
+
+[b]Sin.[/b]
+
+It is the result of cruelty, the result of agonizing suffering bestowed upon others.
+
+No creature is born with sin, but with the growth of intelligent species and races, sin begins to fester.
+Journey through a story of rebellion, resistance and repentance.
+Recover your past, change your fate, meet curious allies and fight evil.
+
+But, beware, a hidden danger manifests and its target is none other than you.
+
+___
+
+[b]Content Warning:[/b]
+
+___
+
+This choose your own adventure story is of the [b]Dark Fantasy[/b] genre.
+Expect gore, blood, violence, cruelty and other dark elements.
+
+This story contains graphic depictions of [b]bodies[/b],
+optional but similarly graphic [b]homosexual content[/b],
+unresolved trauma,
+[b]death[/b],
+self-sacrificial behaviour,
+dark humour,
+and more.
+
+If any of this content offends, upsets, or otherwise displeases you,
+you may stop reading, return when you feel you are able to proceed, or otherwise not read at all.
+
+It is solely [i][b]your[/b][/i] conscious decision to immerse yourself in the story.
+
+By proceeding, you acknowledge this and confirm that you are 18+.
+
+*page_break Proceed
+
+Emptiness.
+
+*page_break What?
+
+Stark, suffocating emptiness is all that greets you when you first come to.
+You are a listless soul without a body, a mind trapped within its own confines.
+There is a distinct lack of sensation of each of your senses.
+Examining this brings you to the realisation that you are currently not residing in a body.
+
+You suddenly become aware of a being, no, you are made aware of its presence.
+It allows you to witness its majesty with the faint remnants of senses you once had.
+You feel powerless as your very core is inspected by the entity.
+
+Its presence softens when it witnesses your story.
+You are made aware that it pities your fate and it begins whispering inside your mind.
+
+[i][b]"Child of fate, desolation is not the end.
+Enter my embrace and let me free you, absolve you of sin.
+There are many things yet plaguing your heart, people you've lost, chances you've missed.
+I will grant you another chance, complete your journey, reach for your true ending and survive."[/b][/i]
+
+*choice
+  #You ponder why such a being would waste time on your misfortune... But you consider it carefully. [Path of the Vampire]
+    *set Race "Vampire"
+    *set p_mastery 50
+    *set c_mastery 50
+    *set b_mastery 50
+    There is too much guilt, too much sorrow that follows you.
+    There are bodies in your wake, blood on your hands, and you couldn't prevent that from happening.
+    You've not once received pity, your fate is of Ouroboros.
+
+    You fear the cycle. It has taken everything from you.
+    You feel rage boil inside you, cursing the cycle for all it has taken from you.
+    
+    You consider the offer. You can break your chains, you can repent for all you have done.
+    
+    You can right what has been wronged.
+
+    You reach out with your essence, tentatively, like the wounded animal you are.
+
+    The presence welcomes your being in a warm embrace.
+    
+    [i][b]"You must withstand the cycle; break it and you shall be free."[/b][/i]
+    
+    *page_break
+
+    *set Strength 70
+    *set Agility 60
+    *set Dexterity 50
+    *set Wisdom 30
+    *set Intelligence 80
+    *set Charisma 40
+    *set Constitution 50
+     
+    Not moments later, you awaken in an abandoned house.
+
+    Wait. How do you know that it's abandoned?
+
+    Your enhanced hearing catches the quick heartbeat of a bird.
+    Turning to face it, your eyes widen in surprise as you realise
+    the quaint swallow is more than ten feet away from the bare window that
+    served as the only lightsource in the room.
+    
+    Weird.
+
+    You shake your head and try to forget about how loud the heartbeat sounded, how... [i]Juicy...[/i]
+
+    You slap the sides of your face to change your focus.
+    Your rough, calloused hands tell epics of your conquests and battles - from what you can feel anyway.
+    Your face is smooth in your hands, plush and pale.
+
+    *goto body_choice1
+    
+  #You have unfinished business haunting you. You cannot miss this chance. [Path of the Damned]
+    *set Race "Damned"
+    *set f_mastery 70
+    You have experienced much loss, but who will defend those you sought to protect?
+    Who, if not you, will fight for the people?
+
+    The darkness chuckles beside you, daring you, taunting you.
+    It mocks your cruel fate of Sisyphus.
+    You glow brighter, determined, fighting the dark embrace.
+
+    You will [b]not[/b] let those in need suffer.
+
+    You reach out with your essence, bravely, like a guinea pig screaming defiantly in the face of a giant.
+  
+    The presence welcomes your being in a warm embrace.
+    
+    [i][b]"Speak to the hearts of the people, they will come to your aid."[/b][/i]
+    
+    *page_break
+
+    *set Strength 60
+    *set Agility 60
+    *set Dexterity 60
+    *set Wisdom 60
+    *set Intelligence 70
+    *set Charisma 40
+    *set Constitution 50
+
+    Not moments later, you awaken in a pile of hay.
+
+    Wait. Hay?
+
+    You groan as you sit up. Hay has gotten everywhere inside your adventurous attire.
+    You brush a hand through your luxuriously curly hair, avoiding your horns, to -
+    
+    Wait.
+    
+    You have horns, big ones too.
+
+    They...
+
+    *choice
+      #...jut menacingly from just above my brow line.
+
+        Truly powerful stalks of horn rise from just above your brow. Your brows
+        are heavy from the displaced tissue, making you look stern even at the best of times.
+
+        Do they have harsh ridges like those on a western dragon, or are they smooth like those on a bull?
+
+        *choice
+          #Ridges adorn my horns like thin valleys partitioned by smooth plateaus of wall horn.
+            *set horn_type "Draconic"
+            The ridges resemble carved canyons, symbolic of your age.
+            All this from what you can feel with your roaming hands.
+            *goto body_choice2
+
+          #My horns are smooth as ivory, but no less imposing from the sheer size of them.
+            *set horn_type "Bovine"
+            They curl around your head like a natural circlet, regal and bold.
+            All this from what you can feel with your roaming hands.
+            *goto body_choice2
+      #...curl into thick spires, like those on a ram.
+        *set horn_type "Curly"
+
+        Your horns are thick at the base and spiral thinner until they end in sharp tips.
+        They are imposing to say the least, and they protect your head quite nicely.
+        *goto body_choice2
+      
+
+*label body_choice1  
+Setting your hands down, you look down at your body. You find yourself...
+
+*choice
+  #...admiring your chiselled musculature.
+    *set Body "Chiselled"
+    Your strong body carries the memories of fierce battles against powerful beasts and ancient spirits.
+    The chords of your muscles are firm and warm - somewhat surprising you since your body acts like a heat-sink.
+    You watch each muscle beautifully stretch under your pale flesh as you ball your hand into a fist.
+
+    A flex of the bicep produces a thick bulge of muscle, much to your appreciation.
+    
+    You rather like this powerful form.
+
+    Of course, you aren't the most muscular man you've seen on your endless journey,
+    but you don't look half bad compared to the more well-formed monsters you've seen. 
+
+    Your eyes stray from your arms down to your mouthwatering, juicy pectorals. Despite
+    being hidden by your armour and over-clothes, you clearly see that you are built like a beast.
+    As your eyes scan over your form, you take time to appreciate your thick thighs and sigh in contentment.
+      
+    *goto Clothes
+        
+  #...content with your lean frame.
+      *set Body "Lean"
+      [Unwritten]
+      *goto Clothes
+
+*label body_choice2
+Setting your hands down, you look down at your body. You find yourself...
+
+*choice
+  #...admiring your chiselled musculature.
+    *set Body "Chiselled"
+    Your strong body carries the memories of intense training and endurance.
+    The chords of your muscles are firm and warm - unsurprising since your body acts like a natural furnace.
+    You watch each muscle beautifully stretch under your pale flesh as you ball your hand into a fist.
+
+    A flex of the bicep produces a thick bulge of muscle, much to your appreciation.
+    
+    You rather like this powerful form.
+
+    Of course, you aren't the most muscular man you've seen in your travels,
+    but you don't look half bad compared to the more well-formed races you've seen. 
+
+    Your eyes stray from your arms down to your mouthwatering, juicy pectorals. Despite
+    being hidden by your gear and over-clothes, you clearly see that you are built like a beast.
+    As your eyes scan over your form, you take time to appreciate your thick thighs and sigh in contentment. 
+
+    *goto Clothes
+
+  #...content with your lean frame.
+    *set Body "Lean"
+    [Unwritten]
+    *goto Clothes
+
+*label Clothes
+Enough of that. 
+
+You take a moment to scan over your attire.
+
+*if Race = "Damned"
+  You never had the funds to afford good armour,
+  nor the opportunity to spend what little you did have on anything outside of food, shelter,
+  information, or ingredients.
+  Life on the road ever since █̸̡̧̢̨̛̭͎̻̘͙͙̤̤͓̤̩̯̙͔̘̗̞͈̱̫̭̬̖̹̠̥̱̦̀̽̀̐͋̋̌͒̈́̊̇͛̀̓͛̿͒͆̌͆̄̉̄̀͆̏̽͗̐̈́̔̔̌͛͐̀͒͌̕͜͝͝͝͝͝ͅͅͅͅ█̶̨̡̢̡̧͇͍̯͎͎̜̙̦̖̪̩̭̙̟̯̣̜̤͙̣̳̭̤̲̻̬̳͍͎̖̫͕̭̙̼͕͇̥͇͚̜͌̉͆̑̇̑̅̓̔̌͆̊̈̌̑̀̓̀͐͗̌̐̑̀́̉̍͌͒͛̾͊͌̇̐͘̕̚͘̕͜͠͝͝͝͝█̴̢̧̲̻͉̭͎̗̜̝̫̞̣̞̠̯͈͈̤̭͈̗͚̱̭͔̳̫͚͎̖̒̔̏͐̀̀̉̇̎̊̈̈́́̈́͌̂̍̓̈́́̐͑̿̄̇̈́̅̿͊̍͘̕͠͝ͅ█̸̧̧͕͙̲̮̦̠̩̟͖̝̱́̾̎̀̊̈́̅̔̑̆̇̉̆̊̒̈́̽̋͋̆̓͗͂̈́͋̃̉̈́̽͗͒̈́̄̂̿̔̚̚͘͠͝͝͠█̴̡̨̧̢̺͔͔̪͕̖͇͍̺̥̻̬̜̥͓̱̗͎̪̼̦̺̪͙̬̩̘̩̤͔͖̗̙̞̱̻͔̖̒̊̒̈͌͛̿́̅͑̽͆̆͗̀̉̈́͋́͑̕̕̕̕͝█̵̧̨̡̡̧̖͈̩̜̫̥̥̖̹̺̱̠̘͇̺͔̱͎̯͍̐̕͝█̵̨̛̛̭̭̫͋͑̔̌̈́̌̑̑̂͐̈́̅́͊̽͊̔͑̏͒͛̉̈́̇̒́͛̄͂̀̎͛̇̓̏̊̉̎̕̕͘̚̚͝͝͠ͅ was harsh to say the least.
+  *goto clothing_options
+
+*elseif Race = "Vampire"
+  You recall that you used to live in a poor village in the southwestern region of Britannia.
+  The village had but one farm, a few shops for the herbalists and farmers, and an amateur
+  blacksmith that worked day and night to supply the small militia there. The soldiers were
+  weak - they were hungry - but they trained however they could.
+  *goto clothing_options
+
+*label clothing_options
+As it stands, what you have been able to afford rests comfortably on your frame.
+
+*choice
+  *selectable_if (Race = "Vampire") #I wear a heavy set of plate-mail I crafted out of the remnants of my enemies, metals I bought and forged, cursed armour I found in infested catacombs and the sacred philosopher's stones.
+    *set outfit "vampire_hunter"
+    You carry with you the smell of death, but you are well protected against all perils.
+    The bones and skulls of the beasts you have fought are melted into the very steel that
+    covers your pale flesh. As for where you sourced the steel, a vivid memory of slicing
+    the head off of one of the █̸̡̧̢̨̛̭͎̻̘͙͙̤̤͓̤̩̯̙͔̘̗̞͈̱̫̭̬̖̹̠̥̱̦̀̽̀̐͋̋̌͒̈́̊̇͛̀̓͛̿͒͆̌͆̄̉̄̀͆̏̽͗̐̈́̔̔̌͛͐̀͒͌̕͜͝͝͝͝͝ͅͅͅͅ█̶̨̡̢̡̧͇͍̯͎͎̜̙̦̖̪̩̭̙̟̯̣̜̤͙̣̳̭̤̲̻̬̳͍͎̖̫͕̭̙̼͕͇̥͇͚̜͌̉͆̑̇̑̅̓̔̌͆̊̈̌̑̀̓̀͐͗̌̐̑̀́̉̍͌͒͛̾͊͌̇̐͘̕̚͘̕͜͠͝͝͝͝█̴̢̧̲̻͉̭͎̗̜̝̫̞̣̞̠̯͈͈̤̭͈̗͚̱̭͔̳̫͚͎̖̒̔̏͐̀̀̉̇̎̊̈̈́́̈́͌̂̍̓̈́́̐͑̿̄̇̈́̅̿͊̍͘̕͠͝ͅ█̸̧̧͕͙̲̮̦̠̩̟͖̝̱́̾̎̀̊̈́̅̔̑̆̇̉̆̊̒̈́̽̋͋̆̓͗͂̈́͋̃̉̈́̽͗͒̈́̄̂̿̔̚̚͘͠͝͝͠█̴̡̨̧̢̺͔͔̪͕̖͇͍̺̥̻̬̜̥͓̱̗͎̪̼̦̺̪͙̬̩̘̩̤͔͖̗̙̞̱̻͔̖̒̊̒̈͌͛̿́̅͑̽͆̆͗̀̉̈́͋́͑̕̕̕̕͝█̵̧̨̡̡̧̖͈̩̜̫̥̥̖̹̺̱̠̘͇̺͔̱͎̯͍̐̕͝█̵̨̛̛̭̭̫͋͑̔̌̈́̌̑̑̂͐̈́̅́͊̽͊̔͑̏͒͛̉̈́̇̒́͛̄͂̀̎͛̇̓̏̊̉̎̕̕͘̚̚͝͝͠ͅ's soldiers - delicious crimson flowing like a fountain
+    from his neck. His enchanted steel plate-mail was magically tuned by the █̸̡̧̢̨̛̭͎̻̘͙͙̤̤͓̤̩̯̙͔̘̗̞͈̱̫̭̬̖̹̠̥̱̦̀̽̀̐͋̋̌͒̈́̊̇͛̀̓͛̿͒͆̌͆̄̉̄̀͆̏̽͗̐̈́̔̔̌͛͐̀͒͌̕͜͝͝͝͝͝ͅͅͅͅ█̶̨̡̢̡̧͇͍̯͎͎̜̙̦̖̪̩̭̙̟̯̣̜̤͙̣̳̭̤̲̻̬̳͍͎̖̫͕̭̙̼͕͇̥͇͚̜͌̉͆̑̇̑̅̓̔̌͆̊̈̌̑̀̓̀͐͗̌̐̑̀́̉̍͌͒͛̾͊͌̇̐͘̕̚͘̕͜͠͝͝͝͝█̴̢̧̲̻͉̭͎̗̜̝̫̞̣̞̠̯͈͈̤̭͈̗͚̱̭͔̳̫͚͎̖̒̔̏͐̀̀̉̇̎̊̈̈́́̈́͌̂̍̓̈́́̐͑̿̄̇̈́̅̿͊̍͘̕͠͝ͅ█̸̧̧͕͙̲̮̦̠̩̟͖̝̱́̾̎̀̊̈́̅̔̑̆̇̉̆̊̒̈́̽̋͋̆̓͗͂̈́͋̃̉̈́̽͗͒̈́̄̂̿̔̚̚͘͠͝͝͠█̴̡̨̧̢̺͔͔̪͕̖͇͍̺̥̻̬̜̥͓̱̗͎̪̼̦̺̪͙̬̩̘̩̤͔͖̗̙̞̱̻͔̖̒̊̒̈͌͛̿́̅͑̽͆̆͗̀̉̈́͋́͑̕̕̕̕͝█̵̧̨̡̡̧̖͈̩̜̫̥̥̖̹̺̱̠̘͇̺͔̱͎̯͍̐̕͝█̵̨̛̛̭̭̫͋͑̔̌̈́̌̑̑̂͐̈́̅́͊̽͊̔͑̏͒͛̉̈́̇̒́͛̄͂̀̎͛̇̓̏̊̉̎̕̕͘̚̚͝͝͠ͅ himself,
+    so the quality was like nothing you've ever seen before.
+
+    You pocketed the armour as soon as you massacred his squad.
+
+    And, as if that wasn't enough, you fought spirits in this armour - witches and ghouls - and their
+    screaming souls eternally temper the magical steel you reforged by yourself, for yourself.
+
+    *goto looks
+
+  #Just an indigo tunic with a small emblem showing my obscure family crest, dirt-brown breeches, adventuring boots and a black cloak.
+    *set outfit "standard_adventuring_gear"
+    Simplicity is oft key for stealth and you shy away from people due to your... circumstances,
+    so as you see it, there's no love lost. You know better than anyone that humans don't approve
+    of your kind, so you might as well try to make yourself as inconspicuous as possible.
+
+    If not for yourself, then for the people. Your crimes are many, but you know guilt and shame like no other.
+
+    You used to be one of them.
+
+    Your eyes sting but the tears don't come. Memories that haunt you chuckle at your vulnerable form.
+
+    *goto looks
+
+  *selectable_if (Race = "Damned") #A white uniform trench-coat with a large green cross on the back - remnant of a bygone war, black breeches, a pair of tall combat boots and an armband with a smaller red cross embroidered onto it.
+    *set outfit "medic_uniform"
+    Ah, nothing more fitting for your job, though there is nothing less fitting than this for your kind.
+
+    Past memories and present demons whisper around you, tearing into you for all of your sins and shortcomings.
+
+    You are too numb to cry or scream at the apparitions, too tired to face the agony.
+
+    *goto looks
+
+*label looks
+*if outfit = "vampire_hunter"
+  You lick your lips as your throat tightens - the memory reminded you of your inhuman hunger.
+  You've been restraining yourself and behaving well this past week. You assume you'll need to feed
+  again shortly.
+
+  *goto looks2
+
+*elseif outfit = "standard_adventuring_gear"
+  You shake your head to rid yourself of the spectres that revel in your misery.
+
+  *goto looks2
+
+*elseif outfit = "medic_uniform"
+  You close your eyes and sigh, exhausted before your day has even begun.
+
+  *goto looks2
+
+*label looks2
+*if Race = "Vampire"
+  You slide off of the firm bed and turn towards the mirror in the bedroom, just beside the vanity.
+
+  Your eyes are...
+  *input_text eye_colour
+
+  *page_break
+
+  *goto looks3
+
+*elseif Race = "Damned"
+  You stand from your bed of hay and exit the barn. You catch your reflection in a puddle nearby.
+
+  Your eyes are...
+  *input_text eye_colour
+
+  *page_break
+  
+  *goto looks3
+  
+*label looks3
+*if Race = "Vampire"
+  A pale (but in no way delicate) face with two forboding ${eye_colour} eyes - each surrounded by a dark ring - stares back.
+  The flesh that was once upon a time a warm, peachy shade looked sickly. A touch informs you that your skin is still
+  as plush, even if cold to the touch.
+
+  You hum in mild curiosity. You didn't know you looked this exhausted.
+
+  Your eyes catch on the sight of your fangs as your undead body forces a yawn from you.
+  They were long and sharp, and your mouth felt so dry.
+
+  *page_break So thirsty...
+
+  You hate days like this the most. You have to ask the common folk for their blood - you
+  feel too weak to fight for your meal like this.
+
+  *goto v_pet
+
+*elseif Race = "Damned"
+  A grief-stricken expression perpetually resides on your face. The things you have seen,
+  the people you've lost, it compounds into an impassable desolation. All you can hope for
+  is that you can in some way repent.
+
+  You bring a hand up to touch your exposed horns - your head missing the other half it needed to be symmetrical.
+  You used to have four horns back in simpler times. Those times are long gone.
+  A dull ache throbs through the lighter side of your forehead - the memory of the horns snapping off seared into your mind.
+
+  You huff. Now is not the time - not when there are beasts, not when there is war,
+  not when there are people who are sick or wounded.
+
+  *goto d_story_start
+
+*label v_pet
+A dark swarm of bats gently chirp and squeak as they wake, clinging to the ceiling.
+Some of them unlatch from overhead and fly down to cuddle against your form.
+You don't exactly remember how you got them, but you do remember each of their names.
+You had to name them something if you were going to keep them, and, in your defence,
+they were the only things in the world that cared for you as if you were still human.
+
+You could call out to them from any distance and they would come to your aid,
+not that it mattered since they followed you like a personal cloud.
+*goto v_story_start
+
+*label v_story_start
+One of the darker bats huddled against you chirps something to you. In a language
+only you can understand, she informs you that there have been no visitors, nor intruders.
+
+You go to pet the small, adorable little thing, but before you can, another squeaks.
+
+Your hand freezes in place. You look at the offender with a contemplative stare as you speak.
+
+"You mean to tell me that they were in the city? In Easthaven?" The expression you make
+startles the poor gray bat. You sigh as you attempt to flush your face of pain.
+
+"Sorry, Ash. This is grave news indeed. The Second-borne and the Van Hellsing hunters being in league
+does not bode well for us." 
+
+You hang your head in frustration. Those filthy blights had the audacity to follow you to the mainland.
+You are made aware of the dryness in your mouth when you go to speak,
+only to realise that your tongue sticks to the roof of your mouth.
+
+So much for a well deserved rest.
+
+*page_break Mmh...
+
+As it stands, you are too hungry to take on the Hellsings and Sava's Second-borne without risking your life.
+
+You'd made up your mind that you would not complete the cycle until you found new, greater strength.
+
+That meant you were vulnerable. The curses took effect long before you fought Sava, and that meant
+you had weaknesses, [i]fatal[/i] weaknesses.
+
+"What a pain..."
+
+You grimace as you think back to before the cycle, back to before you became this... [i]monster.[/i]
+
+You remember your early years as a boy.
+
+*fake_choice
+  #I wasn't born in a boy's body.
+    But your moms loved you all the same, even when you told them.
+    They even hired a mage to reform your body to the perfect little boy's you
+    were always meant to have. The effect was permanent, much to your delight.
+    You love them for accepting you.
+
+  #I was lucky to be born a boy.
+    That you were, but even then, your moms loved you unconditionally.
+    Even if you weren't as lucky, they would undoubtedly support you.
+    You love them for being so supportive of you.
+
+It wasn't even a concern of yours, you were the happy heir of the Magistrav Family of Scholars.
+
+That is, until the accusations of treason. Your moms fled as far as they could
+to hide you away on a shipment to the village of Vamp'Ire,
+and that was the last you saw of them. You cried when the news of their beheading reached you. All that remains
+of the Magistrav Scholars is you - a young man, carrying the name your moms gave you.
+
+You are...
+
+*input_text Name
+
+*page_break
+
+"Don't worry ${Name}, everything will be okay," your mom soothed, caressing your plush face.
+
+"We love you, ${Name}," your ma affirmed as she looked at you with those warm blue-green eyes of hers.
+
+Those were your moms' last words to you; their final farewell.
+
+You have already cried out your tears for this memory, none forming as the solitude consumes you.
+
+Ash and the other bats crowd around you in a full body embrace.
+You thank them silently and pet their soft bodies. The hunger dries out your mouth again as you strut about with your
+living cloak. You smile at the swarm.
+
+"Let's find a drink," you suggest, "I'm sure you're all just as hungry as I am, so I'll
+let you go off after your favourite mangoes and whatnot. If you go to the market, pay with my spare coin.
+I've got plenty leftover from the previous cycles."
+
+Your living cloak slowly detached from your armour's peaks and ridges, waking the rest of the swarm as they chirped happily
+about the food. With one of your coin purses gone, because [i]of course[/i] the swarm wants to buy food rather than seek it, you
+de-materialize the rest of the sacks of valuables into an abyssal subspace - your "storage". 
+
+Using your abyssal powers, you summon your signature black cloak atop your shoulders. You pull up the hood and take your
+trusted sword and dagger off the vanity, sheathing both in their respective sheaths at your hips.
+
+The bats have all already left the house you claimed as your own.
+
+With a sigh, you silently leave the bedroom and descend the stairs to the lobby.
+You approach the handle and listen closely for any suspicious movement or noises.
+
+You breathe a sigh of relief as you sense nothing out of the ordinary, the distant bustle of the port city was the same and
+there were no suspiciously close heartbeats.
+
+This was a welcome sign.
+
+With it, you open the door between you and the human world.
+
+*finish To Town!
+
+*label d_story_start
+You hear thuds and profane curses resonate behind you - from the barn you just stepped out of.
+An annoyed, [i]extremely[/i] grumpy voice calls for your name.
+
+You've only just come to terms with the demons that haunt you for long enough to remember your name.
+
+You are...
+
+*input_text Name
+
+*page_break
+
+*set R_met true
+*set R_friendship 40
+"[i]${Name}[/i]! Where the [i]fuck[/i] did you fuck off to?!"
+
+A humanoid fire elemental harshly swings the barn doors open and spots you with his smouldering gaze.
+
+"[i]There you are![/i]" No sooner did those words leave his mouth than did his body propel itself at you at a blistering speed.
+You hold out your hands to defend yourself, but the elemental easily manoeuveres around your defences and knocks you to the ground
+with a warm tackle-hug.
+
+Huh. You weren't expecting that.
+
+As if on cue, he then bonks you lightly on the head. "Don't you [i]ever[/i] leave our room while I'm still resting!
+What if someone malicious found you and hurt you?!" You shrink guiltily at his words, he was only looking out for you.
+
+As it stood, you couldn't find him inside - probably because his radiant heat drops so low when he sleeps.
+
+"I'm sorry, Ras..." You whimper at his admonishing tone, truly a pushover when it comes to others.
+The elemental - Raserei - huffed, blue fire forming under his flame-tanned cheeks, making them glow a cute shade of green.
+
+"Just wake me up next time, you big, defenceless dummy!"
+
+His flame red irises stared straight into your soul. How could you possibly think of lying to him?
+
+"Alright, just don't go cold on me, Ras. You know well that elementals disappear into their spirit worlds when they exhaust
+their energy."
+You flashed him a shy, pitiful smile - the only smile you can make with the pain you carry.
+You can practically hear his core swell with affection, his flames becoming that much brighter.
+
+"[i]Fine.[/i] We going into town, ${Name}?"
+
+Town would be a smart idea. You're in need of information and supplies and you've heard of some trouble that needs resolving.
+You quickly brush yourself off and motion for the young elemental to follow you.
+
+*finish To Town!
